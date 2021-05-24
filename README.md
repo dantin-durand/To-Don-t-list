@@ -1,19 +1,15 @@
-# to-don-t-list
+# To Don't List
 
-## Project setup
-```
-npm install
-```
+## Présentation
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Réalisation d'un système de do to list en vuejs avec authentification par token.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Installation
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+1. npm install
+2. configurer le .env avec l'URL de l'API
+3. php run serve
+
+## Démo
+
+lien de la démo: [https://to-don-t-list.web.app/](https://to-don-t-list.web.app/)
