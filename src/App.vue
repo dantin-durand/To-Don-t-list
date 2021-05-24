@@ -1,10 +1,29 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+  <Navbar />
+  <router-view />
 </template>
+
+<script>
+import { mapActions } from "vuex";
+import "materialize-css/dist/css/materialize.min.css";
+import "materialize-css/dist/js/materialize.min.js";
+import Navbar from "./components/Navbar.vue";
+
+export default {
+  components: { Navbar },
+  created() {
+    this.$store.dispatch("auth/userInit");
+  },
+  methods: {
+    ...mapActions({ logout: "auth/logout" }),
+  },
+  mounted() {
+    if (M) {
+      M.AutoInit();
+    }
+  },
+};
+</script>
 
 <style>
 #app {
