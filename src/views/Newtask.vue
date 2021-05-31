@@ -43,7 +43,7 @@ export default {
   },
   props: {
     id_task: {
-      type: Number,
+      type: String,
       require: false,
     },
     task: {
